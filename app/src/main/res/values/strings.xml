@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Rubix</string>
+    <string name="Correo">Correo</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="Button_Login">Login </string>
+    <string name="Test_layout"></string>
+    <string name="empezar">Empezar</string>
+    <string name="pausar">Pausar</string>
+    <string name="reiniciar">Reiniciar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="info">
+    iniciamos con la cara blanca, Lo primero que tenemos que hacer es una cruz blanca, prestando atención a los colores de las piezas de alrededor de la blanca.(piezas centrales)
+
+
+    </string>
+
+    <string name="Disclaimer"> Todos estos movimientos estan realizados en direccion a sentido horario  F= front R= Right U = Up L = left D =Down </string>
+    <string name="Disclaimer2"> Todos estos movimientos estan realizados en sentido antihorario F´= front R´= Right U´= Up L´= left D´= down </string>
+
+    <string name="Cruz_f2l">Hello blank fragment</string>
+</resources>

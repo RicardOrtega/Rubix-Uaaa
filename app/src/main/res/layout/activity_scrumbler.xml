@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Scrumbler">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrub"
+            >
+            <TextView
+                android:id="@+id/random"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="vista"
+                android:gravity="center"
+                android:textSize="23dp"></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scrub">
+            <Button
+                android:id="@+id/btn_Generate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Generate"></Button>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/Button_crono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+        </Button>
+        <TextView
+            android:id="@+id/Disclaimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Disclaimer"
+            android:textColor="@color/Highlight"
+            android:layout_below="@id/Button_crono"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Disclaimer2"
+            android:layout_below="@id/Disclaimer"
+            android:textColor="@color/Highlight"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

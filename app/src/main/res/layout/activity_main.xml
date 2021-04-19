@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/Background_color">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       tools:ignore="MissingConstraints"
+       >
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent">
+         <RelativeLayout
+             android:id="@+id/Logo"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/Highlight">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/logo"
+                />
+         </RelativeLayout>
+
+         <LinearLayout
+             android:id="@+id/Name_app"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/Logo"
+             >
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="@string/app_name"
+                   android:gravity="center"
+                   android:textSize="32sp"
+                   android:textColor="@color/Highlight" />
+            </LinearLayout>
+         <LinearLayout
+             android:id="@+id/Correo_edit"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/Name_app">
+               <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/Correo"
+                android:textColorHint="@color/Highlight"
+                ></EditText>
+         </LinearLayout>
+         <LinearLayout
+             android:id="@+id/Contraseña_edit"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/Correo_edit">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:hint="@string/Contraseña"
+               android:textColorHint="@color/Highlight">
+
+            </EditText>
+
+         </LinearLayout>
+         <Button
+             android:id="@+id/button_edit"
+             android:layout_width="200dp"
+             android:layout_centerInParent="true"
+             android:layout_height="50dp"
+             android:layout_below="@id/Contraseña_edit"
+             android:backgroundTint="@color/Highlight"
+             android:hint="@string/Button_Login"
+             android:textColorHint="@color/Background_color"
+             android:layout_marginTop="16dp"></Button>
+      </RelativeLayout>
+
+
+
+
+
+   </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
